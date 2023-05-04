@@ -5,7 +5,22 @@
 	<LangVersion>11.0</LangVersion>
 	  <AssemblyName>Katasec.AspNet.YamlFormatter</AssemblyName>
 	  <RootNamespace>Katasec.AspNet.YamlFormatter</RootNamespace>
+     <IsPackable>true</IsPackable>
+     <PackageProjectUrl>https://github.com/katasec/YamlFormatter</PackageProjectUrl>
+     <Copyright>Katasec LLC</Copyright>
+     <Description>A YAML formatter for ASP.Net Web APIs.</Description>
+     <PackageReadmeFile>readme.md</PackageReadmeFile>
+     <Title>A YAML formatter for ASP.Net WEb API vs. the default JSON formatter.</Title>
+     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
